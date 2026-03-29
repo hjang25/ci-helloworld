@@ -24,10 +24,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
-        run: gradle build
+        run: ./gradlew build
 
       - name: Run Test Coverage
-        run: gradle jacocoTestReport
+        run: ./gradlew jacocoTestReport
 
       - name: Jacoco
         uses: cicirello/jacoco-badge-generator@v2
